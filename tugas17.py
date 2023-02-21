@@ -13,11 +13,11 @@ class Testlogin(unittest.TestCase):
         browser = self.browser #buka web browser
         browser.get("http://barru.pythonanywhere.com/daftar") # buka situs
         time.sleep(3)
-        browser.find_element(By.XPATH,"/html/body/div/div[2]/form/input[1]").send_keys("tester@jagoqa.com") # isi email
+        browser.find_element(By.XPATH,"/html/body/div/div[2]/form/input[1]").send_keys("abdul@yahoo.com") # isi email
         # browser.find_element(By.XPATH,"/html/body/div/div/div/div/div/div[6]/form/input[1]").send_keys("standard_user")
         time.sleep(1)
         
-        browser.find_element(By.CSS_SELECTOR,"input#password").send_keys("testerjago") # isi password
+        browser.find_element(By.CSS_SELECTOR,"input#password").send_keys("abdulalim") # isi password
         time.sleep(1)
         browser.find_element(By.ID,"signin_login").click() # klik tombol sign in
         time.sleep(1)
